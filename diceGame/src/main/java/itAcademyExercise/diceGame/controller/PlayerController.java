@@ -41,12 +41,12 @@ public class PlayerController{
     }
 
     @RequestMapping("/players/ranking/worst")
-    public String getAllPlayersOrderByWorstSuccessfulRate(){
+    public List<String> getAllPlayersOrderByWorstSuccessfulRate(){
         return playerService.getWorstPlayer();
     }
 
     @RequestMapping("/players/ranking/best")
-    public String getAllPlayersOrderByBestSuccessfulRate (){
+    public List<String> getAllPlayersOrderByBestSuccessfulRate (){
         return playerService.getBestPlayer();
     }
 }
